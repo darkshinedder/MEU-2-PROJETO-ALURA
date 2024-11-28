@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Creepster&display=swap" rel="stylesheet">
+    <title>A Cidade Perdida</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0 -->
+        <div class="passo ativo" id="passo-0">
+            <img src="passo0.jpg" alt="Paisagem misteriosa">
+            <p>Você encontra um velho diário em um mercado de antiguidades. Ele menciona a existência de uma cidade perdida, escondida em um deserto. Determinado a desvendar o mistério, você embarca em uma expedição. Ao chegar, encontra uma bifurcação com duas trilhas.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir pela trilha da esquerda</button>
+            <button class="btn-proximo" data-proximo="2">Seguir pela trilha da direita</button>
+        </div>
+
+        <!-- Passo 1 -->
+        <div class="passo" id="passo-1">
+            <img src="passo1.jpg" alt="Deserto misterioso">
+            <p>A trilha da esquerda leva você até uma duna com marcas no chão. Parece que alguém esteve ali recentemente.</p>
+            <button class="btn-proximo" data-proximo="3">Investigar as marcas</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar e continuar</button>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo" id="passo-2">
+            <img src="passo2.jpg" alt="Ruínas antigas">
+            <p>Na trilha da direita, você encontra ruínas cobertas de areia. No centro, há um pedestal com uma pedra brilhante.</p>
+            <button class="btn-proximo" data-proximo="5">Tocar na pedra</button>
+            <button class="btn-proximo" data-proximo="6">Procurar pistas ao redor</button>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo" id="passo-3">
+            <img src="passo3.jpg" alt="Pegadas no deserto">
+            <p>As marcas levam até um pequeno acampamento abandonado. Há um mapa parcialmente queimado.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="8">Voltar para a bifurcação</button>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="passo" id="passo-4">
+            <img src="passo4.jpg" alt="Tempestade de areia">
+            <p>Uma tempestade de areia começa, e você precisa encontrar abrigo rapidamente.</p>
+            <button class="btn-proximo" data-proximo="9">Abrigar-se em uma caverna próxima</button>
+            <button class="btn-proximo" data-proximo="10">Tentar continuar a caminhada</button>
+        </div>
+
+        <!-- Passo 5 -->
+        <div class="passo" id="passo-5">
+            <img src="passo5.jpg" alt="Altar brilhante">
+            <p>Ao tocar na pedra, uma passagem secreta se revela, levando a um corredor iluminado por tochas.</p>
+            <button class="btn-proximo" data-proximo="11">Entrar na passagem</button>
+            <button class="btn-proximo" data-proximo="6">Procurar pistas ao redor</button>
+        </div>
+
+        <!-- Passo 6 -->
+        <div class="passo" id="passo-6">
+            <img src="passo6.jpg" alt="Símbolo misterioso">
+            <p>Você encontra um símbolo estranho esculpido no chão, apontando para uma direção diferente.</p>
+            <button class="btn-proximo" data-proximo="12">Seguir o símbolo</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar e voltar</button>
+        </div>
+
+        <!-- Passo 7 -->
+        <div class="passo" id="passo-7">
+            <img src="passo7.jpg" alt="Entrada oculta">
+            <p>Seguindo o mapa, você encontra a entrada de uma construção escondida, mas está trancada com um enigma.</p>
+            <button class="btn-proximo" data-proximo="13">Resolver o enigma</button>
+            <button class="btn-proximo" data-proximo="8">Voltar para a bifurcação</button>
+        </div>
+
+        <!-- Passo 8 -->
+        <div class="passo" id="passo-8">
+            <img src="passo8.jpg" alt="Deserto à noite">
+            <p>Você retorna à bifurcação inicial. A escuridão começa a cair.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a exploração</button>
+        </div>
+
+        <!-- Passo 9 -->
+        <div class="passo" id="passo-9">
+            <img src="passo9.jpg" alt="Caverna">
+            <p>Na caverna, você encontra pinturas rupestres que mostram um caminho para a cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="14">Seguir o caminho indicado</button>
+            <button class="btn-proximo" data-proximo="10">Voltar para fora</button>
+        </div>
+
+        <!-- Passo 10 -->
+        <div class="passo" id="passo-10">
+            <img src="passo10.jpg" alt="Deserto vasto">
+            <p>Você se perde na tempestade de areia e decide buscar abrigo para não se arriscar mais.</p>
+            <button class="btn-proximo" data-proximo="9">Abrigar-se em uma caverna próxima</button>
+        </div>
+
+        <!-- Passo 11 -->
+        <div class="passo" id="passo-11">
+            <img src="passo11.jpg" alt="Corredor iluminado">
+            <p>O corredor leva você até uma sala repleta de inscrições antigas. No centro, há uma chave dourada.</p>
+            <button class="btn-proximo" data-proximo="7">Pegar a chave</button>
+            <button class="btn-proximo" data-proximo="6">Voltar e explorar outra área</button>
+        </div>
+
+        <!-- Passo 12 -->
+        <div class="passo" id="passo-12">
+            <img src="passo12.jpg" alt="Paisagem oculta">
+            <p>Seguindo o símbolo, você chega a uma ponte que parece levar diretamente à cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="14">Cruzar a ponte</button>
+        </div>
+
+        <!-- Passo 13 -->
+        <div class="passo" id="passo-13">
+            <img src="passo13.jpg" alt="Porta enigmática">
+            <p>Ao resolver o enigma, a porta se abre, revelando um enorme salão dourado.</p>
+            <button class="btn-proximo" data-proximo="15">Entrar no salão</button>
+        </div>
+
+        <!-- Passo 14 -->
+        <div class="passo" id="passo-14">
+            <img src="passo14.jpg" alt="Cidade perdida">
+            <p>Você finalmente encontra a cidade perdida, um lugar mágico repleto de riquezas e segredos.</p>
+            <button class="btn-proximo" data-proximo="15">Explorar a cidade</button>
+        </div>
+
+        <!-- Passo 15 -->
+        <div class="passo" id="passo-15">
+            <img src="passo15.jpg" alt="Tesouro escondido">
+            <p>Parabéns! Você desvenda os segredos da cidade perdida e descobre um tesouro milenar. Sua aventura será lembrada por gerações!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
